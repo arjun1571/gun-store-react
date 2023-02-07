@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../Modal/Modal';
 import "./SingleGun.css"
 
 const SingleGun = (props) => {
@@ -22,8 +23,10 @@ const SingleGun = (props) => {
                     <p>Category: {category}</p>
                     <div className="card-actions justify-end">
                     <div onClick={()=>increseCart()}  className="btn btn-accent">Add TO Cart</div> 
-                    <div className="btn btn-success">Details</div>
+                    {/* <div className="btn btn-success">Details</div> */}
+                    <label htmlFor="my-modal-3" className="btn btn-success">open modal</label>
                     </div>
+                    <Modal></Modal>
                 </div>
             </div>
         </div>
